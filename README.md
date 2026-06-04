@@ -1,16 +1,100 @@
-# React + Vite
+# 📝 Personal Blog (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple personal blog built using **React** and **Vite**. The project focuses on practicing core React concepts such as components, props, JSX, and rendering lists.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+- Reusable React components
+- Data-driven UI using a single `blog.js` file
+- Props passed from parent to child components
+- Dynamic rendering of blog articles using `.map()`
+- Clean and simple layout structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+src/
+├── components/
+│ ├── Header.jsx
+│ ├── About.jsx
+│ ├── ArticleList.jsx
+│ └── Article.jsx
+│
+├── blog.js
+├── App.jsx
+└── main.jsx
+
+
+---
+
+## 🧠 Components Overview
+
+### Header
+Displays the blog title.
+
+**Props:**
+- `name` → blog title
+
+---
+
+### About
+Displays information about the blog.
+
+**Props:**
+- `image` → blog image/logo
+- `about` → blog description
+
+---
+
+### ArticleList
+Renders a list of blog posts.
+
+**Props:**
+- `posts` → array of blog articles
+
+---
+
+### Article
+Displays a single blog post.
+
+**Props:**
+- `title` → article title
+- `date` → publish date
+- `preview` → short description
+
+---
+
+## 📦 Data Source
+
+All blog content is stored in:
+
+```
+
+src/blog.js
+
+```
+
+This file contains:
+- Blog name
+- Image
+- About text
+- Array of posts
+
+---
+
+## 🛠️ Technologies Used
+
+- React
+- Vite
+- JavaScript (ES6+)
+- JSX
+
+---
+
+👩‍💻 Author
+
+Created by Irene as part of a React learning lab.
